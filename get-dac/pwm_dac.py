@@ -5,7 +5,6 @@ import time
 def dec2bin(value):
     return [int(bit) for bit in bin(value)[2:].zfill(8)]
 
-dynamic_range=3
 
 class PWM_DAC:
     def __init__(self, gpio_pin, pwm_frequency, dynamic_range, verbose = False):
